@@ -14,13 +14,27 @@
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
     />
+
+    <!-- splidejs : start -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+      integrity="sha256-6YrKt7vMU9e4bwtlblASqhvvEt4/0JEQJ/zyWOFKnaM="
+      crossorigin="anonymous"
+    />
+    <style>
+      ul.splide__pagination.splide__pagination--ltr {
+        bottom: -1.5rem;
+      }
+    </style>
+    <!-- splidejs : end -->
     <title>myStore</title>
   </head>
 
   <body class="bg-base-dark text-white max-w-screen-md mx-auto">
     <!-- Navbar : start -->
-    <div
-      class="flex justify-between bg-base-light px-[20px] py-[15px] fixed w-full max-w-screen-md top-0"
+    <nav
+      class="flex justify-between bg-base-light px-[20px] py-[15px] fixed w-full max-w-screen-md top-0 z-[10000]"
     >
       <div>
         <a href="" class="font-semibold text-xl">Logo</a>
@@ -29,11 +43,38 @@
         <button class="material-icons">notifications</button>
         <button class="material-icons">search</button>
       </div>
-    </div>
+    </nav>
     <!-- Navbar : end -->
 
     <!-- Content : start -->
     <div class="mt-[58px] mb-[59px] px-[20px] py-[15px] bg-base" id="content">
+      <section class="splide mb-8 mt-[5px]" id="splide">
+        <div class="splide__track rounded-lg">
+          <ul class="splide__list">
+            <li class="splide__slide md:h-[20rem]">
+              <img
+                src="../assets/images/spicyuuu.png"
+                alt="spicyuuu"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </li>
+            <li class="splide__slide md:h-[20rem]">
+              <img
+                src="../assets/images/spicyuuu.png"
+                alt="spicyuuu"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </li>
+            <li class="splide__slide md:h-[20rem]">
+              <img
+                src="../assets/images/spicyuuu.png"
+                alt="spicyuuu"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
         exercitationem quam, at tenetur fugit ea quasi explicabo! Ex aliquid
@@ -205,8 +246,8 @@
     <!-- Content : end -->
 
     <!-- Bottom Navbar : start -->
-    <div
-      class="flex justify-evenly gap-x-[28px] bg-base-light py-[8px] px-[20px] fixed w-full max-w-screen-md bottom-0"
+    <nav
+      class="flex justify-evenly gap-x-[28px] bg-base-light py-[8px] px-[20px] fixed w-full max-w-screen-md bottom-0 z-[10000]"
     >
       <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
         <span class="material-icons">home_filled</span>
@@ -228,8 +269,25 @@
         <span class="material-icons">account_circle</span>
         <span class="text-[10px]">Account</span>
       </a>
-    </div>
+    </nav>
     <!-- Bottom Navbar : end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
+      integrity="sha256-qtSu/7zFd1zx2GaGN7yAuWyIXuxC7IVrfSpncRDxUII="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide("#splide", {
+          arrows: false,
+          type: "loop",
+          gap: "1rem",
+          autoplay: true,
+          pauseOnHover: true,
+        });
+        splide.mount();
+      });
+    </script>
   </body>
 </html>
 
