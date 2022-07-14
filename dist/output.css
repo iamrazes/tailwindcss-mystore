@@ -583,10 +583,6 @@ video {
   margin-top: 58px;
 }
 
-.mb-\[71px\] {
-  margin-bottom: 71px;
-}
-
 .mb-\[59px\] {
   margin-bottom: 59px;
 }
@@ -662,19 +658,9 @@ video {
   padding-bottom: 15px;
 }
 
-.py-\[10px\] {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .py-\[8px\] {
   padding-top: 8px;
   padding-bottom: 8px;
-}
-
-.py-\[6px\] {
-  padding-top: 6px;
-  padding-bottom: 6px;
 }
 
 .text-xl {
