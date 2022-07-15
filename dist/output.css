@@ -612,8 +612,16 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-full {
   height: 100%;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-\[100px\] {
@@ -634,6 +642,10 @@ video {
 
 .max-w-screen-md {
   max-width: 768px;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -662,6 +674,14 @@ video {
 
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-x-3 {
@@ -845,5 +865,13 @@ video {
 @media (min-width: 768px) {
   .md\:h-\[20rem\] {
     height: 20rem;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
