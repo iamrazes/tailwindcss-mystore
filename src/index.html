@@ -1,294 +1,177 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../dist/output.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-      rel="stylesheet"
-    />
 
-    <!-- splidejs : start -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
-      integrity="sha256-6YrKt7vMU9e4bwtlblASqhvvEt4/0JEQJ/zyWOFKnaM="
-      crossorigin="anonymous"
-    />
-    <style>
-      ul.splide__pagination.splide__pagination--ltr {
-        bottom: -1.5rem;
-      }
-    </style>
-    <!-- splidejs : end -->
-    <title>myStore</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../dist/output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet" />
 
-  <body class="bg-base-dark text-white max-w-screen-md mx-auto">
-    <!-- Navbar : start -->
-    <nav
-      class="flex justify-between bg-base-light px-[20px] py-[15px] fixed w-full max-w-screen-md top-0 z-[10000]"
-    >
-      <div>
-        <a href="" class="font-semibold text-xl">Logo</a>
-      </div>
-      <div class="flex gap-x-3">
-        <button class="material-icons">notifications</button>
-        <button class="material-icons">search</button>
-      </div>
-    </nav>
-    <!-- Navbar : end -->
+  <!-- splidejs : start -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    integrity="sha256-6YrKt7vMU9e4bwtlblASqhvvEt4/0JEQJ/zyWOFKnaM=" crossorigin="anonymous" />
+  <style>
+    ul.splide__pagination.splide__pagination--ltr {
+      bottom: -1.5rem;
+    }
+  </style>
+  <!-- splidejs : end -->
+  <title>myStore</title>
+</head>
 
-    <!-- Content : start -->
-    <div class="mt-[58px] mb-[59px] px-[20px] py-[15px] bg-base" id="content">
-      <section class="splide mb-8 mt-[5px]" id="splide">
-        <div class="splide__track rounded-lg">
-          <ul class="splide__list">
-            <li class="splide__slide md:h-[20rem]">
-              <img
-                src="../assets/images/spicyuuu.png"
-                alt="spicyuuu"
-                class="w-full h-full object-cover rounded-lg"
-              />
-            </li>
-            <li class="splide__slide md:h-[20rem]">
-              <img
-                src="../assets/images/spicyuuu.png"
-                alt="spicyuuu"
-                class="w-full h-full object-cover rounded-lg"
-              />
-            </li>
-            <li class="splide__slide md:h-[20rem]">
-              <img
-                src="../assets/images/spicyuuu.png"
-                alt="spicyuuu"
-                class="w-full h-full object-cover rounded-lg"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-        exercitationem quam, at tenetur fugit ea quasi explicabo! Ex aliquid
-        fuga officia nesciunt magni totam, beatae magnam cum odit sed atque.
-        Libero vero, dolorum eum commodi harum aut! Quidem modi consequatur
-        recusandae assumenda commodi, non qui fuga cupiditate ipsum animi libero
-        ratione similique praesentium atque dolorum possimus debitis at est
-        laborum. Natus eaque itaque sit nulla praesentium quos odit. Eum
-        delectus labore voluptatibus non reprehenderit unde explicabo! Aliquid
-        reprehenderit fugit, soluta quibusdam, id aperiam et doloremque deleniti
-        nulla, quod dolor assumenda. Laudantium dolore nesciunt voluptate ab
-        accusamus commodi error odio fuga beatae nostrum mollitia, praesentium
-        quaerat exercitationem, temporibus reprehenderit aperiam asperiores?
-        Odit eum rem ex! Modi excepturi doloremque laboriosam in quam? Minus
-        laudantium, qui quam eius veniam nihil adipisci dicta unde delectus
-        fugiat, repudiandae iste dolor non? Pariatur laborum quis libero
-        delectus hic est veritatis inventore. Rerum, omnis deleniti. Nesciunt,
-        consequuntur. Commodi soluta consectetur delectus labore atque non
-        impedit nihil. Esse debitis ea velit excepturi accusantium magnam quia
-        facere assumenda reprehenderit sequi mollitia aspernatur provident, vero
-        rerum architecto optio laudantium. Consectetur. Architecto dolorem
-        soluta consequuntur at obcaecati voluptates necessitatibus minima nihil,
-        possimus illo laboriosam consectetur non autem in accusantium? Nemo ad
-        quam vitae sint omnis modi perspiciatis iure nesciunt blanditiis alias!
-        Repellendus minima aperiam laboriosam tempore corporis eaque, voluptatum
-        praesentium, ex laborum ipsam natus odio provident consequuntur fuga
-        ratione saepe in nam omnis enim animi quam incidunt quo alias dolorem?
-        Odit. Quia amet eaque deserunt aliquid quas fuga quibusdam dignissimos
-        dolorem perferendis facilis et quaerat modi ex, mollitia, molestias sit
-        obcaecati reiciendis? Nisi similique dicta optio voluptatem culpa
-        consectetur distinctio at. Unde neque vel corporis quibusdam dignissimos
-        distinctio sed temporibus ea rerum molestias necessitatibus consectetur
-        officiis, tempora odio laborum natus aliquam? Excepturi debitis veniam
-        assumenda eaque sapiente laudantium suscipit laborum unde? Vel eaque
-        illo architecto? Eligendi voluptatem dolore animi corporis fugit? Veniam
-        accusamus numquam minima sit vitae illo ex velit maxime eum adipisci
-        quos iusto aperiam porro cum voluptatem, beatae laborum. Pariatur odit
-        deserunt expedita mollitia deleniti ut similique provident nemo culpa
-        commodi, cum ullam quasi praesentium a excepturi. Consequatur inventore
-        blanditiis nulla beatae totam fugit exercitationem soluta non excepturi
-        perferendis. Cum voluptatibus, et ullam repellendus alias quibusdam
-        quidem voluptatem ipsam magnam debitis aperiam rem officia, cumque
-        placeat illum. Laboriosam sint dignissimos dolore facere rem est autem
-        commodi fugiat tenetur repellendus. Vitae, maiores reprehenderit fugit
-        cumque exercitationem recusandae, eaque quis animi expedita minima
-        excepturi ea debitis eligendi, commodi doloremque qui ab ipsam molestias
-        accusamus! Ab explicabo nostrum consequuntur libero ipsa numquam. Eum,
-        temporibus sint. Asperiores sit in earum enim pariatur expedita iusto
-        neque corrupti sint, fugiat laudantium, quas autem rerum nesciunt
-        explicabo, distinctio et. Mollitia neque ducimus nisi atque porro
-        laudantium. Omnis, qui architecto reiciendis ab animi minima tempore quo
-        pariatur quia ipsa, veniam ullam sequi dicta beatae quis officia
-        delectus eius odio nostrum laboriosam! Nemo error dolores iste amet
-        aspernatur. Illum maxime ad ut aliquam odit doloribus excepturi
-        explicabo eum exercitationem architecto unde consectetur labore ex,
-        animi id accusamus deleniti facilis? Eaque voluptates assumenda quidem
-        dolor, distinctio odit facere animi. Sit, quasi ratione in odit neque
-        incidunt suscipit, est quae voluptatem labore dolorem, officiis aperiam
-        dicta ut magni commodi rem aspernatur voluptate ab culpa quia placeat.
-        Officiis ipsam facilis odit? Nemo, veniam laudantium dolor nobis illo
-        odio voluptatem aperiam minus exercitationem totam eaque, enim aliquid
-        autem? In, iste fuga doloribus modi, corporis voluptas exercitationem at
-        similique placeat architecto quis dolorem. Hic, alias omnis a beatae
-        sunt ex enim in, asperiores rerum quaerat blanditiis! Dolor temporibus
-        fugit optio in, libero deserunt, sapiente minima illum nobis fuga
-        maiores culpa, ea earum quas. Enim modi qui labore animi sit non alias,
-        cumque maxime sed neque reiciendis recusandae accusamus impedit aliquam
-        dolor. Voluptate repudiandae porro molestias quis suscipit eveniet
-        blanditiis maiores recusandae explicabo magnam? Consectetur mollitia
-        corporis facilis animi, architecto explicabo, deserunt quisquam quaerat,
-        officia vel aperiam. Cumque ut nobis quos fugiat et repudiandae atque
-        debitis, labore ratione voluptates eum incidunt sunt consequatur at!
-        Dolorem vel, sunt ratione nisi, quos ipsam ullam illum omnis reiciendis
-        blanditiis, est nemo iusto a voluptas mollitia iste impedit? Reiciendis
-        numquam possimus, rem explicabo quis ipsam quasi totam dolore. Quisquam
-        maiores eius beatae sint voluptatem molestias deleniti quaerat nostrum
-        quibusdam sit! Adipisci debitis facilis, asperiores modi doloribus
-        aspernatur iure, reprehenderit ad eligendi accusamus cum molestias
-        consequuntur numquam excepturi delectus. Totam, veritatis consequuntur,
-        velit nostrum non facilis voluptatum nam sapiente neque reprehenderit
-        ut. In voluptas error perferendis doloremque deserunt explicabo magni at
-        iusto ex voluptates expedita a delectus, repellendus ab? Aliquam sequi
-        eos, eveniet minus quis pariatur rem quidem. Nihil, voluptatum
-        quibusdam. Repellendus hic eligendi, ducimus tenetur similique aut
-        accusamus voluptatem eaque, corporis quasi obcaecati dolor repudiandae
-        rem illo alias. Corporis aspernatur consequuntur quod ipsa iure,
-        reprehenderit, fuga modi, dolorem maiores molestiae eligendi. Porro
-        neque maiores ullam expedita accusamus labore, perspiciatis, ea, tempore
-        aspernatur provident temporibus. Voluptatum repudiandae adipisci
-        maiores! Corporis fugit praesentium incidunt odio! Est ex sint omnis!
-        Nemo quis modi accusamus quasi tenetur pariatur ipsum id eveniet,
-        consequuntur officia quisquam nesciunt reiciendis optio, expedita enim
-        natus aspernatur impedit. Magnam non ullam eligendi at. Sequi cumque
-        nobis laboriosam ea nesciunt, sit, veniam in suscipit blanditiis
-        molestiae nam dicta quam cupiditate consectetur aliquam voluptatem dolor
-        nemo. Nihil, deleniti? Nemo, impedit? Facere minima, labore omnis, esse
-        sint fugiat necessitatibus voluptate repudiandae illo amet dolore
-        libero? Illo dolor quod est ab, deserunt eveniet perspiciatis nulla
-        recusandae, a minima ipsa consequatur et unde. Consectetur numquam et
-        velit corporis praesentium eum minus, omnis ut. Ducimus nemo temporibus
-        ex quae. Assumenda porro earum ab, repellat nulla voluptatibus quidem
-        architecto nemo blanditiis, neque, deserunt fugiat quisquam! Quasi
-        minima perferendis consequatur debitis dolorem veritatis vero voluptates
-        omnis, obcaecati nihil numquam libero laudantium nesciunt tempora
-        suscipit reprehenderit eos consequuntur sequi, esse quo? Veritatis quos
-        corrupti tenetur magni qui. Ipsa cumque fuga, quas temporibus
-        consectetur magnam facere illo dignissimos praesentium voluptatibus
-        velit nemo officiis totam quod accusamus eos doloremque nulla eveniet
-        sapiente harum repellendus nihil nesciunt possimus obcaecati! Veniam.
-        Eveniet voluptate amet reiciendis beatae aspernatur veritatis facere
-        quis qui, molestias odio sit nulla iusto obcaecati distinctio, impedit
-        culpa voluptatem dolorem cum accusamus quas alias esse. Placeat ullam
-        impedit deserunt. Eaque sint minima dignissimos modi aperiam deleniti ut
-        voluptatem et consequatur, veniam libero sed? Libero, quaerat. Aut unde
-        ducimus sint veritatis atque reiciendis accusamus incidunt architecto,
-        culpa repellendus exercitationem odit? Numquam, amet nam! Dolorem soluta
-        autem natus animi voluptas veniam deserunt nihil consequuntur, numquam
-        porro eos itaque perspiciatis mollitia eveniet cumque sapiente quisquam
-        doloribus quis! Quae totam quos ipsa animi. Architecto fugiat tempora,
-        harum recusandae aperiam laborum deleniti nam minima debitis, animi
-        labore maxime similique aliquid obcaecati quia ex nulla accusamus quis
-        inventore. Porro rerum tenetur similique, magnam modi provident! Nobis
-        ipsam voluptas assumenda aut perferendis minima architecto soluta
-        distinctio in nam, ducimus facilis provident. Nostrum possimus cum
-        voluptas laboriosam dicta, quasi eaque alias placeat excepturi, ducimus
-        sunt nobis earum. Quod ipsa perspiciatis harum voluptates accusantium
-        eligendi omnis asperiores, quibusdam quo quas. Maxime commodi officiis
-        aperiam totam cum a, quidem cupiditate blanditiis, recusandae
-        praesentium eligendi placeat alias natus sequi ipsam. Quam voluptate,
-        eius quos, rerum adipisci laboriosam fugit rem tempore hic, similique
-        beatae nam ad enim aspernatur cumque autem eos dolores doloremque
-        voluptatibus? Nemo expedita dignissimos reiciendis inventore delectus
-        magni. Hic quod deleniti enim reprehenderit neque sed vero aliquam.
-        Tempora impedit non nobis eius delectus, adipisci est architecto
-        possimus sit autem repellat quasi in doloremque, officia dolor corporis
-        a nemo? Fugiat quis sequi animi incidunt, perspiciatis officiis
-        laudantium ratione, consequuntur ipsa beatae doloremque vero, tenetur
-        expedita perferendis quo. Architecto, odio in saepe iusto quidem culpa
-        dolorum. Fugit, voluptate perferendis? Suscipit! Repellendus quis ullam
-        perspiciatis incidunt reiciendis molestias consectetur et eveniet amet
-        iusto, quae natus, provident facere aliquid pariatur saepe reprehenderit
-        atque quasi in autem. Vitae quidem sunt sint alias ipsum. Veritatis
-        nostrum illo quisquam provident soluta odio id voluptates eligendi modi
-        maiores dolores veniam rem cupiditate at enim ab ipsum aliquid,
-        voluptatibus quae repudiandae exercitationem voluptate, omnis ut
-        voluptatum. Adipisci! Eum unde earum facere. Impedit nihil labore sunt
-        enim eos. Reiciendis maiores animi quae laborum ratione dignissimos,
-        delectus fuga sed repellendus consequatur, mollitia totam quaerat
-        provident. Optio laudantium maxime aliquid! Autem, laboriosam nihil?
-        Aspernatur non harum doloremque laboriosam, aut expedita tenetur, ea
-        magni rerum facilis inventore adipisci temporibus voluptate rem? Maiores
-        sunt minima vero recusandae eligendi possimus nihil debitis dicta.
-        Exercitationem culpa expedita sit tempore magni deleniti reiciendis
-        enim, atque iusto fugit corrupti tenetur fuga recusandae dicta sed
-        consequuntur. Aut, neque quia quae iure reiciendis repudiandae dicta
-        iste asperiores eum. A rem voluptatum deleniti. Nobis quia magnam
-        adipisci fugit quo explicabo temporibus aliquid eius! Molestiae eaque
-        nihil minus ipsum cumque consequatur repellat necessitatibus ratione!
-        Nam veniam maxime labore aperiam in. Veniam voluptatibus quae quisquam
-        libero, eaque totam sequi corrupti itaque. Dolore, soluta facere. Ut
-        repellendus, quas aut cum, unde quos quisquam quibusdam corrupti
-        voluptates corporis ea saepe assumenda provident ullam. Ab error totam
-        natus, non recusandae vitae ratione veniam in ut tempora! Quidem nisi
-        praesentium, facere, ullam veritatis necessitatibus, iure laborum
-        explicabo repudiandae a suscipit eos blanditiis earum. Necessitatibus,
-        doloremque!
-      </p>
+<body class="bg-base-dark text-white max-w-screen-md mx-auto">
+  <!-- Navbar : start -->
+  <nav class="flex justify-between bg-base-light px-[20px] py-[15px] fixed w-full max-w-screen-md top-0 z-[10000]">
+    <div>
+      <a href="" class="font-semibold text-xl">Logo</a>
     </div>
-    <!-- Content : end -->
+    <div class="flex gap-x-3">
+      <button class="material-icons">notifications</button>
+      <button class="material-icons">search</button>
+    </div>
+  </nav>
+  <!-- Navbar : end -->
 
-    <!-- Bottom Navbar : start -->
-    <nav
-      class="flex justify-evenly gap-x-[28px] bg-base-light py-[8px] px-[20px] fixed w-full max-w-screen-md bottom-0 z-[10000]"
-    >
-      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-        <span class="material-icons">home_filled</span>
-        <span class="text-[10px]">Home</span>
-      </a>
-      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-        <span class="material-icons">category</span>
-        <span class="text-[10px]">Category</span>
-      </a>
-      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-        <span class="material-icons">attach_money</span>
-        <span class="text-[10px]">Purchased</span>
-      </a>
-      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-        <span class="material-icons">favorite_border</span>
-        <span class="text-[10px]">Whishlist</span>
-      </a>
-      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-        <span class="material-icons">account_circle</span>
-        <span class="text-[10px]">Account</span>
-      </a>
-    </nav>
-    <!-- Bottom Navbar : end -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
-      integrity="sha256-qtSu/7zFd1zx2GaGN7yAuWyIXuxC7IVrfSpncRDxUII="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var splide = new Splide("#splide", {
-          arrows: false,
-          type: "loop",
-          gap: "1rem",
-          autoplay: true,
-          pauseOnHover: true,
-        });
-        splide.mount();
+  <!-- Content : start -->
+  <div class="mt-[58px] mb-[59px] px-[20px] py-[15px] bg-base" id="content">
+    <section class="splide mb-8 mt-[5px]" id="splide">
+      <div class="splide__track rounded-lg">
+        <ul class="splide__list">
+          <li class="splide__slide md:h-[20rem]">
+            <img src="../assets/images/spicyuuu.png" alt="spicyuuu" class="w-full h-full object-cover rounded-lg" />
+          </li>
+          <li class="splide__slide md:h-[20rem]">
+            <img src="../assets/images/spicyuuu.png" alt="spicyuuu" class="w-full h-full object-cover rounded-lg" />
+          </li>
+          <li class="splide__slide md:h-[20rem]">
+            <img src="../assets/images/spicyuuu.png" alt="spicyuuu" class="w-full h-full object-cover rounded-lg" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Showcase A -->
+    <div class="flex flex-col">
+
+      <div class="flex flex-row justify-between items-end">
+        <p class="text-lg font-bold">Showcase A</p>
+        <a href="#" class="text-sm hover:text-[#FFB800]">See All</a>
+      </div>
+
+      <div class="flex gap-x-2 my-2 ">
+
+        <div class="flex flex-col bg-base-light w-[155px] h-[240px] px-2 py-2">
+          <img src="../assets/images/c.jpg" class="object-cover h-[100px]" alt="">
+
+          <a href="#" class="flex flex-wrap mt-1 gap-x-1">
+            <div class="flex items-center gap-x-1">
+              <span class="material-icons text-sm">circle</span>
+              <p class="text-[8px]">
+                Uploader
+              </p>
+            </div>
+          </a>
+
+          <a class="text-[12px] h-[26px]" href="#">
+            Nama Produk Nama Produk
+          </a>
+
+          <div class="flex items-center my-1 gap-x-1 border-b border-[#FFB800] pb-1">
+            <span class="material-icons text-[#FFB800]">star</span>
+            <p class="text-[8px]">5.0 | Terjual 1</p>
+          </div>
+
+          <div class="flex justify-between items-center mt-1">
+            <button class="material-icons">favorite_border</button>
+            <p class="font-semibold text-[12px]">RP. 420.000</p>
+          </div>
+
+        </div>
+
+        <div class="flex flex-col bg-base-light w-[155px] h-[240px] px-2 py-2">
+          <img src="../assets/images/b.jpg" class="object-cover h-[100px]" alt="">
+
+          <a href="#" class="flex flex-wrap mt-1 gap-x-1">
+            <div class="flex items-center gap-x-1">
+              <span class="material-icons text-sm">circle</span>
+              <p class="text-[8px]">
+                Uploader
+              </p>
+            </div>
+          </a>
+
+          <a class="text-[12px] h-[26px]" href="#">
+            Nama Produk Nama Produk
+          </a>
+
+          <div class="flex items-center my-1 gap-x-1 border-b border-[#FFB800] pb-1">
+            <span class="material-icons text-[#FFB800]">star</span>
+            <p class="text-[8px]">5.0 | Terjual 1</p>
+          </div>
+
+          <div class="flex justify-between items-center mt-1">
+            <button class="material-icons">favorite_border</button>
+            <p class="font-semibold text-[12px]">RP. 420.000</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Showcase B -->
+    <!-- Showcase C -->
+  </div>
+  <!-- Content : end -->
+
+  <!-- Bottom Navbar : start -->
+  <nav
+    class="flex justify-evenly gap-x-[28px] bg-base-light py-[8px] px-[20px] fixed w-full max-w-screen-md bottom-0 z-[10000]">
+    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+      <span class="material-icons text-[#FFB800]">home_filled</span>
+      <span class="text-[10px] text-[#FFB800]">Home</span>
+    </a>
+    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+      <span class="material-icons">category</span>
+      <span class="text-[10px]">Category</span>
+    </a>
+    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+      <span class="material-icons">attach_money</span>
+      <span class="text-[10px]">Purchased</span>
+    </a>
+    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+      <span class="material-icons">favorite_border</span>
+      <span class="text-[10px]">Whishlist</span>
+    </a>
+    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+      <span class="material-icons">account_circle</span>
+      <span class="text-[10px]">Account</span>
+    </a>
+  </nav>
+  <!-- Bottom Navbar : end -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
+    integrity="sha256-qtSu/7zFd1zx2GaGN7yAuWyIXuxC7IVrfSpncRDxUII=" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var splide = new Splide("#splide", {
+        arrows: false,
+        type: "loop",
+        gap: "1rem",
+        autoplay: true,
+        pauseOnHover: true,
       });
-    </script>
-  </body>
+      splide.mount();
+    });
+  </script>
+</body>
+
 </html>
 
 <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
