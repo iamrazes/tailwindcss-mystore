@@ -1,177 +1,291 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link href="../dist/output.css" rel="stylesheet" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="../dist/output.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-    rel="stylesheet" />
+    <!-- splidejs : start -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+      integrity="sha256-6YrKt7vMU9e4bwtlblASqhvvEt4/0JEQJ/zyWOFKnaM="
+      crossorigin="anonymous"
+    />
+    <style>
+      ul.splide__pagination.splide__pagination--ltr {
+        bottom: -1.5rem;
+      }
+    </style>
+    <!-- splidejs : end -->
+    <title>myStore</title>
+  </head>
 
-  <!-- splidejs : start -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
-    integrity="sha256-6YrKt7vMU9e4bwtlblASqhvvEt4/0JEQJ/zyWOFKnaM=" crossorigin="anonymous" />
-  <style>
-    ul.splide__pagination.splide__pagination--ltr {
-      bottom: -1.5rem;
-    }
-  </style>
-  <!-- splidejs : end -->
-  <title>myStore</title>
-</head>
-
-<body class="bg-base-dark text-white max-w-screen-md mx-auto">
-  <!-- Navbar : start -->
-  <nav class="flex justify-between bg-base-light px-[20px] py-[15px] fixed w-full max-w-screen-md top-0 z-[10000]">
-    <div>
-      <a href="" class="font-semibold text-xl">Logo</a>
-    </div>
-    <div class="flex gap-x-3">
-      <button class="material-icons">notifications</button>
-      <button class="material-icons">search</button>
-    </div>
-  </nav>
-  <!-- Navbar : end -->
-
-  <!-- Content : start -->
-  <div class="mt-[58px] mb-[59px] px-[20px] py-[15px] bg-base" id="content">
-    <section class="splide mb-8 mt-[5px]" id="splide">
-      <div class="splide__track rounded-lg">
-        <ul class="splide__list">
-          <li class="splide__slide md:h-[20rem]">
-            <img src="../assets/images/spicyuuu.png" alt="spicyuuu" class="w-full h-full object-cover rounded-lg" />
-          </li>
-          <li class="splide__slide md:h-[20rem]">
-            <img src="../assets/images/spicyuuu.png" alt="spicyuuu" class="w-full h-full object-cover rounded-lg" />
-          </li>
-          <li class="splide__slide md:h-[20rem]">
-            <img src="../assets/images/spicyuuu.png" alt="spicyuuu" class="w-full h-full object-cover rounded-lg" />
-          </li>
-        </ul>
+  <body class="bg-base-dark text-white max-w-screen-md mx-auto">
+    <!-- Navbar : start -->
+    <nav
+      class="flex justify-between bg-base-light px-[20px] py-[15px] fixed w-full max-w-screen-md top-0 z-[10000]"
+    >
+      <div>
+        <a href="" class="font-semibold text-xl">Logo</a>
       </div>
-    </section>
-
-    <!-- Showcase A -->
-    <div class="flex flex-col">
-
-      <div class="flex flex-row justify-between items-end">
-        <p class="text-lg font-bold">Showcase A</p>
-        <a href="#" class="text-sm hover:text-[#FFB800]">See All</a>
+      <div class="flex gap-x-3">
+        <button class="material-icons">notifications</button>
+        <button class="material-icons">search</button>
       </div>
+    </nav>
+    <!-- Navbar : end -->
 
-      <div class="flex gap-x-2 my-2 ">
+    <!-- Content : start -->
+    <div class="mt-[58px] mb-[59px] px-[20px] py-[15px] bg-base" id="content">
+      <section class="splide mb-8 mt-[5px]" id="splide">
+        <div class="splide__track rounded-lg">
+          <ul class="splide__list">
+            <li class="splide__slide md:h-[20rem]">
+              <img
+                src="../assets/images/spicyuuu.png"
+                alt="spicyuuu"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </li>
+            <li class="splide__slide md:h-[20rem]">
+              <img
+                src="../assets/images/spicyuuu.png"
+                alt="spicyuuu"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </li>
+            <li class="splide__slide md:h-[20rem]">
+              <img
+                src="../assets/images/spicyuuu.png"
+                alt="spicyuuu"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <div class="flex flex-col bg-base-light w-[155px] h-[240px] px-2 py-2">
-          <img src="../assets/images/c.jpg" class="object-cover h-[100px]" alt="">
-
-          <a href="#" class="flex flex-wrap mt-1 gap-x-1">
-            <div class="flex items-center gap-x-1">
-              <span class="material-icons text-sm">circle</span>
-              <p class="text-[8px]">
-                Uploader
-              </p>
-            </div>
-          </a>
-
-          <a class="text-[12px] h-[26px]" href="#">
-            Nama Produk Nama Produk
-          </a>
-
-          <div class="flex items-center my-1 gap-x-1 border-b border-[#FFB800] pb-1">
-            <span class="material-icons text-[#FFB800]">star</span>
-            <p class="text-[8px]">5.0 | Terjual 1</p>
-          </div>
-
-          <div class="flex justify-between items-center mt-1">
-            <button class="material-icons">favorite_border</button>
-            <p class="font-semibold text-[12px]">RP. 420.000</p>
-          </div>
-
+      <!-- Showcase A -->
+      <div class="flex flex-col">
+        <div class="flex flex-row justify-between items-end">
+          <p class="text-lg font-bold">Showcase A</p>
+          <a href="#" class="text-sm hover:text-[#FFB800]">See All</a>
         </div>
 
-        <div class="flex flex-col bg-base-light w-[155px] h-[240px] px-2 py-2">
-          <img src="../assets/images/b.jpg" class="object-cover h-[100px]" alt="">
+        <div class="flex gap-x-2 my-2">
+          <div class="flex flex-col bg-base-light w-[155px] h-full px-2 py-2">
+            <img
+              src="../assets/images/c.jpg"
+              class="object-cover h-[100px]"
+              alt=""
+            />
 
-          <a href="#" class="flex flex-wrap mt-1 gap-x-1">
-            <div class="flex items-center gap-x-1">
-              <span class="material-icons text-sm">circle</span>
-              <p class="text-[8px]">
-                Uploader
-              </p>
+            <a href="#" class="flex flex-wrap mt-1 gap-x-1">
+              <div class="flex items-center gap-x-1">
+                <span class="material-icons text-sm">circle</span>
+                <p class="text-[8px]">Uploader</p>
+              </div>
+            </a>
+
+            <a class="text-[0.86rem] leading-[1.5] line-clamp-2" href="#">
+              Nama Produk Nama Produk
+            </a>
+
+            <div
+              class="border-[#FFB800] border-b flex items-center py-1 gap-x-[2px]"
+            >
+              <span class="material-icons text-[#FFB800] text-[14px]"
+                >star</span
+              >
+              <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
             </div>
-          </a>
 
-          <a class="text-[12px] h-[26px]" href="#">
-            Nama Produk Nama Produk
-          </a>
-
-          <div class="flex items-center my-1 gap-x-1 border-b border-[#FFB800] pb-1">
-            <span class="material-icons text-[#FFB800]">star</span>
-            <p class="text-[8px]">5.0 | Terjual 1</p>
+            <div class="flex justify-between items-center mt-1">
+              <button class="material-icons text-[14px]">
+                favorite_border
+              </button>
+              <p class="font-semibold text-[12px]">Rp 420,000</p>
+            </div>
           </div>
 
-          <div class="flex justify-between items-center mt-1">
-            <button class="material-icons">favorite_border</button>
-            <p class="font-semibold text-[12px]">RP. 420.000</p>
-          </div>
+          <div class="flex flex-col bg-base-light w-[155px] h-full px-2 py-2">
+            <img
+              src="../assets/images/b.jpg"
+              class="object-cover h-[100px]"
+              alt=""
+            />
 
+            <a href="#" class="flex flex-wrap mt-1 gap-x-1">
+              <div class="flex items-center gap-x-1">
+                <span class="material-icons text-sm">circle</span>
+                <p class="text-[8px]">Uploader</p>
+              </div>
+            </a>
+
+            <a class="text-[0.86rem] leading-[1.5] line-clamp-2" href="#">
+              Nama Produk Nama Produk
+            </a>
+
+            <div
+              class="border-[#FFB800] border-b flex items-center py-1 gap-x-[2px]"
+            >
+              <span class="material-icons text-[#FFB800] text-[14px]"
+                >star</span
+              >
+              <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
+            </div>
+
+            <div class="flex justify-between items-center mt-1">
+              <button class="material-icons text-[14px]">
+                favorite_border
+              </button>
+              <p class="font-semibold text-[12px]">Rp 420,000</p>
+            </div>
+          </div>
         </div>
-
       </div>
 
+      <!-- Showcase B -->
+      <div class="flex flex-col">
+        <div class="flex flex-row justify-between items-end">
+          <p class="text-lg font-bold">Showcase B</p>
+          <a href="#" class="text-sm hover:text-[#FFB800]">See All</a>
+        </div>
+
+        <div class="flex gap-x-2 my-2">
+          <div class="flex flex-col bg-base-light w-[155px] h-full px-2 py-2">
+            <img
+              src="../assets/images/spicyuuu.png"
+              class="object-cover h-[100px]"
+              alt=""
+            />
+
+            <a href="#" class="flex flex-wrap mt-1 gap-x-1">
+              <div class="flex items-center gap-x-1">
+                <span class="material-icons text-sm">circle</span>
+                <p class="text-[8px]">Uploader</p>
+              </div>
+            </a>
+
+            <a class="text-[0.86rem] leading-[1.5] line-clamp-2" href="#">
+              Nama Produk Nama Produk
+            </a>
+
+            <div
+              class="border-[#FFB800] border-b flex items-center py-1 gap-x-[2px]"
+            >
+              <span class="material-icons text-[#FFB800] text-[14px]"
+                >star</span
+              >
+              <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
+            </div>
+
+            <div class="flex justify-between items-center mt-1">
+              <button class="material-icons text-[14px]">
+                favorite_border
+              </button>
+              <p class="font-semibold text-[12px]">Rp 420,000</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col bg-base-light w-[155px] h-full px-2 py-2">
+            <img
+              src="../assets/images/b.jpg"
+              class="object-cover h-[100px]"
+              alt=""
+            />
+
+            <a href="#" class="flex flex-wrap mt-1 gap-x-1">
+              <div class="flex items-center gap-x-1">
+                <span class="material-icons text-sm">circle</span>
+                <p class="text-[8px]">Uploader</p>
+              </div>
+            </a>
+
+            <a class="text-[0.86rem] leading-[1.5] line-clamp-2" href="#">
+              Nama Produk Nama Produk
+            </a>
+
+            <div
+              class="border-[#FFB800] border-b flex items-center py-1 gap-x-[2px]"
+            >
+              <span class="material-icons text-[#FFB800] text-[14px]"
+                >star</span
+              >
+              <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
+            </div>
+
+            <div class="flex justify-between items-center mt-1">
+              <button class="material-icons text-[14px]">
+                favorite_border
+              </button>
+              <p class="font-semibold text-[12px]">Rp 420,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Showcase C -->
     </div>
+    <!-- Content : end -->
 
-    <!-- Showcase B -->
-    <!-- Showcase C -->
-  </div>
-  <!-- Content : end -->
+    <!-- Bottom Navbar : start -->
+    <nav
+      class="flex justify-evenly gap-x-[28px] bg-base-light py-[8px] px-[20px] fixed w-full max-w-screen-md bottom-0 z-[10000] border-t-2 border-base"
+    >
+      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+        <span class="material-icons text-[#FFB800]">home_filled</span>
+        <span class="text-[10px] text-[#FFB800]">Home</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+        <span class="material-icons">category</span>
+        <span class="text-[10px]">Category</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+        <span class="material-icons">attach_money</span>
+        <span class="text-[10px]">Purchased</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+        <span class="material-icons">favorite_border</span>
+        <span class="text-[10px]">Whishlist</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+        <span class="material-icons">account_circle</span>
+        <span class="text-[10px]">Account</span>
+      </a>
+    </nav>
+    <!-- Bottom Navbar : end -->
 
-  <!-- Bottom Navbar : start -->
-  <nav
-    class="flex justify-evenly gap-x-[28px] bg-base-light py-[8px] px-[20px] fixed w-full max-w-screen-md bottom-0 z-[10000]">
-    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-      <span class="material-icons text-[#FFB800]">home_filled</span>
-      <span class="text-[10px] text-[#FFB800]">Home</span>
-    </a>
-    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-      <span class="material-icons">category</span>
-      <span class="text-[10px]">Category</span>
-    </a>
-    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-      <span class="material-icons">attach_money</span>
-      <span class="text-[10px]">Purchased</span>
-    </a>
-    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-      <span class="material-icons">favorite_border</span>
-      <span class="text-[10px]">Whishlist</span>
-    </a>
-    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-      <span class="material-icons">account_circle</span>
-      <span class="text-[10px]">Account</span>
-    </a>
-  </nav>
-  <!-- Bottom Navbar : end -->
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
-    integrity="sha256-qtSu/7zFd1zx2GaGN7yAuWyIXuxC7IVrfSpncRDxUII=" crossorigin="anonymous"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var splide = new Splide("#splide", {
-        arrows: false,
-        type: "loop",
-        gap: "1rem",
-        autoplay: true,
-        pauseOnHover: true,
+    <!-- splide js : start -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
+      integrity="sha256-qtSu/7zFd1zx2GaGN7yAuWyIXuxC7IVrfSpncRDxUII="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide("#splide", {
+          arrows: false,
+          type: "loop",
+          gap: "1rem",
+          autoplay: true,
+          pauseOnHover: true,
+        });
+        splide.mount();
       });
-      splide.mount();
-    });
-  </script>
-</body>
-
+    </script>
+    <!-- splide js : end -->
+  </body>
 </html>
 
 <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->

@@ -7,7 +7,7 @@
   "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
     "url": "https://github.com/iamrazes/mystore/issues"
   },
   "homepage": "https://github.com/iamrazes/mystore#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.0"
+  }
 }

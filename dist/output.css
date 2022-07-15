@@ -588,21 +588,6 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.mx-1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
 .mt-\[58px\] {
   margin-top: 58px;
 }
@@ -619,14 +604,6 @@ video {
   margin-top: 5px;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-\[6px\] {
-  margin-top: 6px;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -635,72 +612,24 @@ video {
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .h-full {
   height: 100%;
-}
-
-.h-2 {
-  height: 0.5rem;
-}
-
-.h-\[12px\] {
-  height: 12px;
-}
-
-.h-\[26px\] {
-  height: 26px;
-}
-
-.h-\[255px\] {
-  height: 255px;
-}
-
-.h-\[2px\] {
-  height: 2px;
-}
-
-.h-\[98px\] {
-  height: 98px;
-}
-
-.h-\[120px\] {
-  height: 120px;
 }
 
 .h-\[100px\] {
   height: 100px;
 }
 
-.h-\[240px\] {
-  height: 240px;
-}
-
 .w-full {
   width: 100%;
-}
-
-.w-\[45px\] {
-  width: 45px;
-}
-
-.w-2 {
-  width: 0.5rem;
 }
 
 .w-\[155px\] {
   width: 155px;
 }
 
-.w-\[12px\] {
-  width: 12px;
-}
-
-.w-\[2px\] {
-  width: 2px;
+.w-\[45px\] {
+  width: 45px;
 }
 
 .max-w-screen-md {
@@ -740,15 +669,6 @@ video {
        column-gap: 0.75rem;
 }
 
-.gap-x-\[28px\] {
-  -moz-column-gap: 28px;
-       column-gap: 28px;
-}
-
-.gap-y-\[4px\] {
-  row-gap: 4px;
-}
-
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -759,6 +679,20 @@ video {
        column-gap: 0.25rem;
 }
 
+.gap-x-\[2px\] {
+  -moz-column-gap: 2px;
+       column-gap: 2px;
+}
+
+.gap-x-\[28px\] {
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+}
+
+.gap-y-\[4px\] {
+  row-gap: 4px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -767,9 +701,22 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
 .border-\[\#FFB800\] {
   --tw-border-opacity: 1;
   border-color: rgb(255 184 0 / var(--tw-border-opacity));
+}
+
+.border-base {
+  --tw-border-opacity: 1;
+  border-color: rgb(33 33 33 / var(--tw-border-opacity));
 }
 
 .bg-base-dark {
@@ -802,11 +749,6 @@ video {
   padding-bottom: 15px;
 }
 
-.py-\[8px\] {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -817,52 +759,14 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
-}
-
-.pt-\[6px\] {
-  padding-top: 6px;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.pt-\[2\.5rem\] {
-  padding-top: 2.5rem;
-}
-
-.pt-\[1rem\] {
-  padding-top: 1rem;
-}
-
-.pt-\[0\.5rem\] {
-  padding-top: 0.5rem;
-}
-
-.pt-\[0\.25rem\] {
+.py-1 {
   padding-top: 0.25rem;
-}
-
-.pt-\[0\.2rem\] {
-  padding-top: 0.2rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.pb-1 {
   padding-bottom: 0.25rem;
 }
 
-.text-center {
-  text-align: center;
+.py-\[8px\] {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .text-xl {
@@ -880,28 +784,29 @@ video {
   line-height: 1.25rem;
 }
 
-.text-\[10px\] {
-  font-size: 10px;
+.text-\[8px\] {
+  font-size: 8px;
 }
 
-.text-\[2px\] {
-  font-size: 2px;
+.text-\[0\.86rem\] {
+  font-size: 0.86rem;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
 }
 
 .text-\[12px\] {
   font-size: 12px;
 }
 
-.text-\[6px\] {
-  font-size: 6px;
+.text-\[10px\] {
+  font-size: 10px;
 }
 
-.text-\[8px\] {
-  font-size: 8px;
-}
-
-.text-\[11px\] {
-  font-size: 11px;
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-semibold {
@@ -912,6 +817,14 @@ video {
   font-weight: 700;
 }
 
+.leading-tight {
+  line-height: 1.25;
+}
+
+.leading-\[1\.5\] {
+  line-height: 1.5;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -920,6 +833,22 @@ video {
 .text-\[\#FFB800\] {
   --tw-text-opacity: 1;
   color: rgb(255 184 0 / var(--tw-text-opacity));
+}
+
+.text-base {
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity));
+}
+
+.text-white\/80 {
+  color: rgb(255 255 255 / 0.8);
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .hover\:text-\[\#FFB800\]:hover {
