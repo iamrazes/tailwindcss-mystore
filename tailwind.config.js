@@ -6,6 +6,9 @@ module.exports = {
         base: "#212121",
         "base-light": "#323232",
         "base-dark": "#0A0A0A",
+        accent: {
+          yellow: "#FFB800",
+        },
       },
     },
   },

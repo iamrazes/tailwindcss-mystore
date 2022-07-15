@@ -13,7 +13,6 @@
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
     />
-    <link href="../dist/output.css" rel="stylesheet" />
 
     <!-- splidejs : start -->
     <link
@@ -26,8 +25,17 @@
       ul.splide__pagination.splide__pagination--ltr {
         bottom: -1.5rem;
       }
+
+      button.splide__pagination__page.is-active {
+        background: #ffb800;
+      }
+
+      button.splide__pagination__page {
+        background: white;
+      }
     </style>
     <!-- splidejs : end -->
+    <link href="../dist/output.css" rel="stylesheet" />
     <title>myStore</title>
   </head>
 
@@ -80,7 +88,7 @@
       <div class="flex flex-col">
         <div class="flex flex-row justify-between items-end">
           <p class="text-lg font-bold">Showcase A</p>
-          <a href="#" class="text-sm hover:text-[#FFB800]">See All</a>
+          <a href="#" class="text-sm hover:text-accent-yellow">See All</a>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-2">
@@ -103,9 +111,9 @@
             </a>
 
             <div
-              class="border-[#FFB800] border-b flex items-center py-1 gap-x-[2px]"
+              class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
             >
-              <span class="material-icons text-[#FFB800] text-[14px]"
+              <span class="material-icons text-accent-yellow text-[14px]"
                 >star</span
               >
               <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
@@ -138,9 +146,9 @@
             </a>
 
             <div
-              class="border-[#FFB800] border-b flex items-center py-1 gap-x-[2px]"
+              class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
             >
-              <span class="material-icons text-[#FFB800] text-[14px]"
+              <span class="material-icons text-accent-yellow text-[14px]"
                 >star</span
               >
               <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
@@ -172,9 +180,9 @@
             </a>
 
             <div
-              class="border-[#FFB800] border-b flex items-center py-1 gap-x-[2px]"
+              class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
             >
-              <span class="material-icons text-[#FFB800] text-[14px]"
+              <span class="material-icons text-accent-yellow text-[14px]"
                 >star</span
               >
               <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
@@ -207,9 +215,9 @@
             </a>
 
             <div
-              class="border-[#FFB800] border-b flex items-center py-1 gap-x-[2px]"
+              class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
             >
-              <span class="material-icons text-[#FFB800] text-[14px]"
+              <span class="material-icons text-accent-yellow text-[14px]"
                 >star</span
               >
               <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
@@ -241,9 +249,9 @@
             </a>
 
             <div
-              class="border-[#FFB800] border-b flex items-center py-1 gap-x-[2px]"
+              class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
             >
-              <span class="material-icons text-[#FFB800] text-[14px]"
+              <span class="material-icons text-accent-yellow text-[14px]"
                 >star</span
               >
               <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
@@ -276,9 +284,9 @@
             </a>
 
             <div
-              class="border-[#FFB800] border-b flex items-center py-1 gap-x-[2px]"
+              class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
             >
-              <span class="material-icons text-[#FFB800] text-[14px]"
+              <span class="material-icons text-accent-yellow text-[14px]"
                 >star</span
               >
               <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
@@ -301,8 +309,8 @@
       class="flex justify-evenly gap-x-[28px] bg-base-light py-[8px] px-[20px] fixed w-full max-w-screen-md bottom-0 z-[10000] border-t-2 border-base"
     >
       <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-        <span class="material-icons text-[#FFB800]">home_filled</span>
-        <span class="text-[10px] text-[#FFB800]">Home</span>
+        <span class="material-icons text-accent-yellow">home_filled</span>
+        <span class="text-[10px] text-accent-yellow">Home</span>
       </a>
       <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
         <span class="material-icons">category</span>
