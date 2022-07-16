@@ -596,6 +596,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .mt-\[58px\] {
   margin-top: 58px;
 }
@@ -664,6 +669,50 @@ video {
   height: auto;
 }
 
+.h-\[72px\] {
+  height: 72px;
+}
+
+.h-\[100px\] {
+  height: 100px;
+}
+
+.h-\[25\%\] {
+  height: 25%;
+}
+
+.h-\[25rem\] {
+  height: 25rem;
+}
+
+.h-\[120px\] {
+  height: 120px;
+}
+
+.h-max {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.h-72 {
+  height: 18rem;
+}
+
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.max-h-screen {
+  max-height: 100vh;
+}
+
 .w-full {
   width: 100%;
 }
@@ -674,6 +723,18 @@ video {
 
 .w-14 {
   width: 3.5rem;
+}
+
+.w-\[72px\] {
+  width: 72px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[120px\] {
+  width: 120px;
 }
 
 .max-w-screen-md {
@@ -702,6 +763,14 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -746,6 +815,23 @@ video {
 
 .gap-y-\[4px\] {
   row-gap: 4px;
+}
+
+.gap-y-3 {
+  row-gap: 0.75rem;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.gap-y-1 {
+  row-gap: 0.25rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
 }
 
 .rounded-lg {
@@ -851,8 +937,22 @@ video {
   padding-right: 1rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pb-\[1px\] {
   padding-bottom: 1px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-xl {
@@ -892,6 +992,36 @@ video {
 
 .text-\[17px\] {
   font-size: 17px;
+}
+
+.text-\[7px\] {
+  font-size: 7px;
+}
+
+.text-\[11px\] {
+  font-size: 11px;
+}
+
+.text-\[19px\] {
+  font-size: 19px;
+}
+
+.text-\[9px\] {
+  font-size: 9px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-semibold {
