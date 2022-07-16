@@ -44,12 +44,29 @@
     <nav
       class="flex justify-between bg-base-light px-[20px] py-[15px] fixed w-full max-w-screen-md top-0 z-[10000] border-b-2 border-base"
     >
-      <div>
+      <div id="brandSection">
         <a href="./index.html" class="font-semibold text-xl">Logo</a>
       </div>
-      <div class="flex gap-x-3">
+      <div class="flex gap-x-3" id="iconsSection">
         <button class="material-icons">notifications</button>
-        <button class="material-icons">search</button>
+        <button class="material-icons" id="searchToggle">search</button>
+      </div>
+
+      <div
+        class="absolute w-full flex left-0 top-0 px-[20px] py-[15px] gap-2 hidden"
+        id="searchSection"
+      >
+        <form action="#" method="get" class="w-full">
+          <input
+            type="text"
+            class="w-full h-[28px] px-2 text-base-dark focus:outline-none"
+            placeholder="Search"
+            name="search"
+          />
+        </form>
+        <button class="bg-base-light material-icons" id="searchToggle">
+          close
+        </button>
       </div>
     </nav>
     <!-- Navbar : end -->
@@ -328,6 +345,10 @@
       });
     </script>
     <!-- splide js : end -->
+
+    <!-- navbar : start -->
+    <script src="./navbar.js"></script>
+    <!-- navbar : end -->
   </body>
 </html>
 
