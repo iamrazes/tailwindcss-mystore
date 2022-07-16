@@ -887,6 +887,10 @@ video {
        column-gap: 0.5rem;
 }
 
+.gap-y-px {
+  row-gap: 1px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1094,6 +1098,10 @@ video {
   font-size: 11px;
 }
 
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1132,6 +1140,11 @@ video {
 .text-base-light {
   --tw-text-opacity: 1;
   color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+.text-\[\#BB271A\] {
+  --tw-text-opacity: 1;
+  color: rgb(187 39 26 / var(--tw-text-opacity));
 }
 
 .line-clamp-2 {
