@@ -116,7 +116,7 @@
                 </div>
 
                 <div class="flex flex-row justify-between">
-                  <p class="text-sm">1 x Rp. 2.500.000</p>
+                  <p class="text-sm">1 x Rp 2,500,000</p>
                   <p class="flex items-center gap-x-1 text-[11px]">
                     <span class="material-icons text-[11px] text-accent-yellow"
                       >star</span
@@ -127,35 +127,46 @@
             </div>
           </div>
           <div class="flex justify-between items-center text-sm px-3 pb-3 pt-2">
-            <button class="bg-base px-2 py-1 text-[10px]">Download File</button>
-            <p class="font-semibold">Total : Rp. 2.500.000</p>
+            <button class="bg-base px-3 py-1 text-[10px] font-bold uppercase">
+              Download File
+            </button>
+            <p class="font-semibold">Total : Rp 2,500,000</p>
           </div>
         </div>
       </div>
 
       <p class="text-lg font-semibold mt-3 mb-2">Refund Request</p>
-      <div class="bg-base-light">
-        <form action="#" method="post">
-          <label class="px-3 pt-3 pb-1 text-sm block font-semibold"
-            >Reason</label
-          >
-          <div class="px-3 w-full">
-            <textarea name="" id="" class="w-full px-2 py-1 text-base-dark focus:outline-none" rows="5"></textarea>
+      <div class="bg-base-light px-4 py-4">
+        <form action="#" method="post" class="flex flex-col gap-4">
+          <div class="flex flex-col gap-2">
+            <label class="text-sm block font-semibold">Reason</label>
+            <textarea
+              name=""
+              id=""
+              class="w-full px-2 py-1 text-base-dark focus:outline-none"
+              rows="5"
+            ></textarea>
           </div>
-          <label class="px-3 pt-3 pb-1 text-sm block font-semibold"
-            >GoPay Account</label
-          >
-          <div class="px-3 pb-3 w-full">
-            <input type="text" class="w-full h-[28px] px-2 text-base-dark focus:outline-none" />
+
+          <div class="flex flex-col gap-2">
+            <label class="text-sm block font-semibold">GoPay Account</label>
+            <input
+              type="text"
+              class="w-full h-[28px] px-2 text-base-dark focus:outline-none"
+            />
           </div>
-          <div class="flex justify-end px-3 pb-3">
-            <button class="bg-base px-2 py-2 text-[10px] font-bold">Send Request</button>
+          <div class="flex justify-end">
+            <button class="bg-base px-3 py-2 text-[10px] font-bold uppercase">
+              Send Request
+            </button>
           </div>
         </form>
       </div>
 
       <section class="splide mb-8 mt-5" id="anotherProduct">
-        <h2 class="text-lg font-bold mb-3">Products you might be interested in</h2>
+        <h2 class="text-lg font-bold mb-3">
+          Products you might be interested in
+        </h2>
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
