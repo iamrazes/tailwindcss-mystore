@@ -1,193 +1,345 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-    rel="stylesheet" />
+    <!-- splidejs : start -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+      integrity="sha256-6YrKt7vMU9e4bwtlblASqhvvEt4/0JEQJ/zyWOFKnaM="
+      crossorigin="anonymous"
+    />
+    <style>
+      ul.splide__pagination.splide__pagination--ltr {
+        bottom: -1.5rem;
+      }
 
-  <!-- splidejs : start -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
-    integrity="sha256-6YrKt7vMU9e4bwtlblASqhvvEt4/0JEQJ/zyWOFKnaM=" crossorigin="anonymous" />
-  <style>
-    ul.splide__pagination.splide__pagination--ltr {
-      bottom: -1.5rem;
-    }
+      button.splide__pagination__page.is-active {
+        background: #ffb800;
+      }
 
-    button.splide__pagination__page.is-active {
-      background: #ffb800;
-    }
+      button.splide__pagination__page {
+        background: white;
+      }
+    </style>
+    <!-- splidejs : end -->
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>myStore</title>
+  </head>
 
-    button.splide__pagination__page {
-      background: white;
-    }
-  </style>
-  <!-- splidejs : end -->
-  <link href="../dist/output.css" rel="stylesheet" />
-  <title>myStore</title>
-</head>
-
-<body class="bg-base-dark text-white max-w-screen-md mx-auto">
-  <!-- Navbar : start -->
-  <nav
-    class="flex justify-between bg-base-light px-[20px] py-[15px] fixed w-full max-w-screen-md top-0 z-[10000] border-b-2 border-base">
-    <div id="brandSection">
-      <a href="./index.html" class="font-semibold text-xl">Logo</a>
-    </div>
-    <div class="flex gap-x-3" id="iconsSection">
-      <button class="material-icons">notifications</button>
-      <button class="material-icons" id="searchToggle">search</button>
-    </div>
-
-    <div class="absolute w-full flex left-0 top-0 px-[20px] py-[15px] gap-2 hidden" id="searchSection">
-      <form action="#" method="get" class="w-full">
-        <input type="text" class="w-full h-[28px] px-2 text-base-dark focus:outline-none" placeholder="Search"
-          name="search" />
-      </form>
-      <button class="bg-base-light material-icons" id="searchToggle">
-        close
-      </button>
-    </div>
-  </nav>
-  <!-- Navbar : end -->
-
-  <!-- Content : start -->
-  <div class="mt-[58px] mb-[59px] px-[20px] py-[15px] bg-base" id="content">
-    <p class="text-lg font-semibold">Detail of Purchased Item</p>
-    <div class="bg-base-light mt-2">
-      <div class="flex flex-col gap-y-1 px-3 py-3">
-        <div class="flex flex-wrap justify-between text-sm ">
-          <p>Invoice :</p>
-          <p class="text-right">INV-CORE-62cd9944ddasda</p>
-        </div>
-        <div class="flex flex-wrap justify-between text-sm ">
-          <p>Purchase Date :</p>
-          <p class="text-right">32 Februari 2022, 15:33</p>
-        </div>
-        <div class="flex flex-wrap justify-between text-sm ">
-          <p>Purchase Method :</p>
-          <p class="text-right">GoPay</p>
-        </div>
+  <body class="bg-base-dark text-white max-w-screen-md mx-auto">
+    <!-- Navbar : start -->
+    <nav
+      class="flex justify-between bg-base-light px-[20px] py-[15px] fixed w-full max-w-screen-md top-0 z-[10000] border-b-2 border-base"
+    >
+      <div id="brandSection">
+        <a href="./index.html" class="font-semibold text-xl">Logo</a>
       </div>
-    </div>
-    <div class="bg-base-light mt-2">
-      <div class="flex flex-col gap-y-1">
-        <div class="border-b border-accent-yellow">
-          <div class="flex px-3 py-3">
-            <img src="../assets/images/sample1.png" class="w-[100px] h-[100px] object-cover" alt="">
-            <div class="flex flex-col gap-y-2 mx-2 w-full">
-              <p class="font-semibold">Template Backend Laravel Menggunakan
-                AdminLTE</p>
-              <p class="flex items-center gap-x-1 text-[10px]"><span
-                  class="material-icons text-[10px]">circle</span>Uploader
-              </p>
-    
-              <div class="flex flex-row justify-between">
-                <p class="text-sm">1 x Rp. 2.500.000</p>
-                <p class="flex items-center gap-x-1 text-[11px] "><span
-                    class="material-icons text-[11px] text-accent-yellow">star</span>5.0</p>
-              </div>
+      <div class="flex gap-x-3" id="iconsSection">
+        <button class="material-icons">notifications</button>
+        <button class="material-icons" id="searchToggle">search</button>
+      </div>
+
+      <div
+        class="absolute w-full flex left-0 top-0 px-[20px] py-[15px] gap-2 hidden"
+        id="searchSection"
+      >
+        <form action="#" method="get" class="w-full">
+          <input
+            type="text"
+            class="w-full h-[28px] px-2 text-base-dark focus:outline-none"
+            placeholder="Search"
+            name="search"
+          />
+        </form>
+        <button class="bg-base-light material-icons" id="searchToggle">
+          close
+        </button>
+      </div>
+    </nav>
+    <!-- Navbar : end -->
+
+    <!-- Content : start -->
+    <div class="mt-[58px] mb-[59px] px-[20px] py-[15px] bg-base" id="content">
+      <p class="text-lg font-semibold">Detail of Purchased Item</p>
+      <div class="bg-base-light mt-2">
+        <div class="flex flex-col gap-y-1 px-3 py-3">
+          <div class="flex flex-wrap justify-between text-sm">
+            <p>Invoice :</p>
+            <p class="text-right uppercase">INV-CORE-62cd9944ddasda</p>
+          </div>
+          <div class="flex flex-wrap justify-between text-sm">
+            <p>Purchase Date :</p>
+            <p class="text-right">32 Februari 2022, 15:33</p>
+          </div>
+          <div class="flex flex-wrap justify-between text-sm">
+            <p>Payment Method :</p>
+            <div class="flex items-center gap-1">
+              <img
+                src="../assets/icons/gopay.png"
+                alt="GoPay"
+                class="h-[20px] w-[20px] object-contain"
+              />
+              <span class="font-bold">GoPay</span>
             </div>
           </div>
         </div>
-        <div class="flex justify-between text-sm px-3 py-2">
-          <button class="bg-base rounded-xl px-2 text-[10px]">Download File</button>
-          <p class="font-semibold">Total : Rp. 2.500.000</p>
+      </div>
+      <div class="bg-base-light mt-2">
+        <div class="flex flex-col gap-y-1">
+          <div class="border-b border-accent-yellow">
+            <div class="flex px-3 py-3">
+              <img
+                src="../assets/images/sample1.png"
+                class="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-contain"
+                alt=""
+              />
+              <div class="flex flex-col gap-y-2 mx-2 w-full">
+                <p class="font-semibold">
+                  Template Backend Laravel Menggunakan AdminLTE
+                </p>
+                <div class="flex items-center gap-x-1">
+                  <span class="material-icons text-[16px]">circle</span>
+                  <p class="text-[10px]">Uploader</p>
+                </div>
+
+                <div class="flex flex-row justify-between">
+                  <p class="text-sm">1 x Rp. 2.500.000</p>
+                  <p class="flex items-center gap-x-1 text-[11px]">
+                    <span class="material-icons text-[11px] text-accent-yellow"
+                      >star</span
+                    >5.0
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between items-center text-sm px-3 pb-3 pt-2">
+            <button class="bg-base px-2 py-1 text-[10px]">Download File</button>
+            <p class="font-semibold">Total : Rp. 2.500.000</p>
+          </div>
         </div>
       </div>
+
+      <p class="text-lg font-semibold mt-3 mb-2">Refund Request</p>
+      <div class="bg-base-light">
+        <form action="#" method="post">
+          <label class="px-3 pt-3 pb-1 text-sm block font-semibold"
+            >Reason</label
+          >
+          <div class="px-3 w-full">
+            <textarea name="" id="" class="w-full px-2 py-1 text-base-dark focus:outline-none" rows="5"></textarea>
+          </div>
+          <label class="px-3 pt-3 pb-1 text-sm block font-semibold"
+            >GoPay Account</label
+          >
+          <div class="px-3 pb-3 w-full">
+            <input type="text" class="w-full h-[28px] px-2 text-base-dark focus:outline-none" />
+          </div>
+          <div class="flex justify-end px-3 pb-3">
+            <button class="bg-base px-2 py-2 text-[10px] font-bold">Send Request</button>
+          </div>
+        </form>
+      </div>
+
+      <section class="splide mb-8 mt-5" id="anotherProduct">
+        <h2 class="text-lg font-bold mb-3">Products you might be interested in</h2>
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="flex flex-col bg-base-light w-full h-auto px-2 py-2">
+                <img
+                  src="../assets/images/c.jpg"
+                  class="object-cover aspect-square"
+                  alt=""
+                />
+
+                <a href="#" class="flex flex-wrap mt-1 gap-x-1">
+                  <div class="flex items-center gap-x-1">
+                    <span class="material-icons text-sm">circle</span>
+                    <p class="text-[8px]">Uploader</p>
+                  </div>
+                </a>
+
+                <a class="text-[0.86rem] leading-[1.5] line-clamp-2" href="#">
+                  Nama Produk Nama Produk
+                </a>
+
+                <div
+                  class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
+                >
+                  <span class="material-icons text-accent-yellow text-[14px]"
+                    >star</span
+                  >
+                  <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
+                </div>
+
+                <div class="flex justify-between items-center mt-1">
+                  <button class="material-icons text-[14px]">
+                    favorite_border
+                  </button>
+                  <p class="font-semibold text-[12px]">Rp 420,000</p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="flex flex-col bg-base-light w-full h-auto px-2 py-2">
+                <img
+                  src="../assets/images/c.jpg"
+                  class="object-cover aspect-square"
+                  alt=""
+                />
+
+                <a href="#" class="flex flex-wrap mt-1 gap-x-1">
+                  <div class="flex items-center gap-x-1">
+                    <span class="material-icons text-sm">circle</span>
+                    <p class="text-[8px]">Uploader</p>
+                  </div>
+                </a>
+
+                <a class="text-[0.86rem] leading-[1.5] line-clamp-2" href="#">
+                  Nama Produk Nama Produk
+                </a>
+
+                <div
+                  class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
+                >
+                  <span class="material-icons text-accent-yellow text-[14px]"
+                    >star</span
+                  >
+                  <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
+                </div>
+
+                <div class="flex justify-between items-center mt-1">
+                  <button class="material-icons text-[14px]">
+                    favorite_border
+                  </button>
+                  <p class="font-semibold text-[12px]">Rp 420,000</p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="flex flex-col bg-base-light w-full h-auto px-2 py-2">
+                <img
+                  src="../assets/images/c.jpg"
+                  class="object-cover aspect-square"
+                  alt=""
+                />
+
+                <a href="#" class="flex flex-wrap mt-1 gap-x-1">
+                  <div class="flex items-center gap-x-1">
+                    <span class="material-icons text-sm">circle</span>
+                    <p class="text-[8px]">Uploader</p>
+                  </div>
+                </a>
+
+                <a class="text-[0.86rem] leading-[1.5] line-clamp-2" href="#">
+                  Nama Produk Nama Produk
+                </a>
+
+                <div
+                  class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
+                >
+                  <span class="material-icons text-accent-yellow text-[14px]"
+                    >star</span
+                  >
+                  <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
+                </div>
+
+                <div class="flex justify-between items-center mt-1">
+                  <button class="material-icons text-[14px]">
+                    favorite_border
+                  </button>
+                  <p class="font-semibold text-[12px]">Rp 420,000</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
+    <!-- Content : end -->
 
-    <p class="text-lg font-semibold mt-3 mb-2">Refund Request</p>
-    <div class="bg-base-light">
-      <p class="px-3 pt-3 pb-1 text-sm">Reason :</p>
-      <div class="px-3 w-full">
-        <input type="text" class="h-[120px] w-full">
-      </div>
-      <p class="px-3 pt-3 pb-1 text-sm">Payment Account :</p>
-      <div class="px-3 pb-3 w-full">
-        <input type="text" class="w-full">
-      </div>
-      <div class="flex justify-end px-3 pb-3">
-        <button class="bg-base rounded-lg px-2 py-1 text-[10px]">Send Nudes</button>
-      </div>
-    </div>
+    <!-- Bottom Navbar : start -->
+    <nav
+      class="flex justify-evenly gap-x-[28px] bg-base-light py-[8px] px-[20px] fixed w-full max-w-screen-md bottom-0 z-[10000] border-t-2 border-base"
+    >
+      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+        <span class="material-icons">home_filled</span>
+        <span class="text-[10px]">Home</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+        <span class="material-icons">category</span>
+        <span class="text-[10px]">Category</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+        <span class="material-icons">attach_money</span>
+        <span class="text-[10px]">Purchased</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+        <span class="material-icons">favorite_border</span>
+        <span class="text-[10px]">Whishlist</span>
+      </a>
+      <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
+        <span class="material-icons">account_circle</span>
+        <span class="text-[10px]">Account</span>
+      </a>
+    </nav>
+    <!-- Bottom Navbar : end -->
 
-    <p class="text-lg font-semibold mt-3 mb-2">Product you might interested in</p>
-    
-  </div>
-  <!-- Content : end -->
-
-  <!-- Bottom Navbar : start -->
-  <nav
-    class="flex justify-evenly gap-x-[28px] bg-base-light py-[8px] px-[20px] fixed w-full max-w-screen-md bottom-0 z-[10000] border-t-2 border-base">
-    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-      <span class="material-icons">home_filled</span>
-      <span class="text-[10px]">Home</span>
-    </a>
-    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-      <span class="material-icons">category</span>
-      <span class="text-[10px]">Category</span>
-    </a>
-    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-      <span class="material-icons">attach_money</span>
-      <span class="text-[10px]">Purchased</span>
-    </a>
-    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-      <span class="material-icons">favorite_border</span>
-      <span class="text-[10px]">Whishlist</span>
-    </a>
-    <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
-      <span class="material-icons">account_circle</span>
-      <span class="text-[10px]">Account</span>
-    </a>
-  </nav>
-  <!-- Bottom Navbar : end -->
-
-  <!-- splide js : start -->
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
-    integrity="sha256-qtSu/7zFd1zx2GaGN7yAuWyIXuxC7IVrfSpncRDxUII=" crossorigin="anonymous"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var splide = new Splide("#splide", {
-        arrows: false,
-        type: "loop",
-        gap: "1rem",
-        autoplay: true,
-        pauseOnHover: true,
-      });
-      splide.mount();
-      var anotherProduct = new Splide("#anotherProduct", {
-        arrows: false,
-        pagination: false,
-        // type: "loop",
-        gap: "1rem",
-        autoplay: true,
-        pauseOnHover: true,
-        breakpoints: {
-          425: {
-            perPage: 2,
+    <!-- splide js : start -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"
+      integrity="sha256-qtSu/7zFd1zx2GaGN7yAuWyIXuxC7IVrfSpncRDxUII="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // var splide = new Splide("#splide", {
+        //   arrows: false,
+        //   type: "loop",
+        //   gap: "1rem",
+        //   autoplay: true,
+        //   pauseOnHover: true,
+        // });
+        // splide.mount();
+        var anotherProduct = new Splide("#anotherProduct", {
+          arrows: false,
+          pagination: false,
+          // type: "loop",
+          gap: "1rem",
+          autoplay: true,
+          pauseOnHover: true,
+          breakpoints: {
+            425: {
+              perPage: 2,
+            },
+            2560: {
+              perPage: 4,
+            },
           },
-          2560: {
-            perPage: 4,
-          },
-        },
+        });
+        anotherProduct.mount();
       });
-      anotherProduct.mount();
-    });
-  </script>
-  <!-- splide js : end -->
+    </script>
+    <!-- splide js : end -->
 
-  <!-- navbar : start -->
-  <script src="./navbar.js"></script>
-  <!-- navbar : end -->
-</body>
-
+    <!-- navbar : start -->
+    <script src="./navbar.js"></script>
+    <!-- navbar : end -->
+  </body>
 </html>
 
 <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
