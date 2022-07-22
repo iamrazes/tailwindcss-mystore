@@ -72,7 +72,10 @@
     <!-- Navbar : end -->
 
     <!-- Content : start -->
-    <div class="mt-[58px] mb-[59px] px-[20px] py-[15px] bg-base min-h-[calc(100vh-118px)]" id="content">
+    <div
+      class="mt-[58px] mb-[59px] px-[20px] py-[15px] bg-base min-h-[calc(100vh-118px)]"
+      id="content"
+    >
       <section class="splide mb-8 mt-[5px]" id="splide">
         <div class="splide__track rounded-lg">
           <ul class="splide__list">
@@ -318,6 +321,59 @@
           </div>
         </div>
       </div>
+      <nav class="my-2">
+        <ul class="pagination flex justify-center gap-1">
+          <li class="px-2 py-1">
+            <a
+              href="https://mystore.test?page=9"
+              rel="prev"
+              aria-label="« Previous"
+              >‹</a
+            >
+          </li>
+
+          <li class="px-2 py-1">
+            <a href="https://mystore.test?page=1">1</a>
+          </li>
+          <li class="px-2 py-1">
+            <a href="https://mystore.test?page=2">2</a>
+          </li>
+
+          <li class="disabled px-2 py-1" aria-disabled="true">
+            <span>...</span>
+          </li>
+
+          <li class="px-2 py-1">
+            <a href="https://mystore.test?page=9">9</a>
+          </li>
+          <li class="active bg-base-light px-2 py-1" aria-current="page">
+            <span>10</span>
+          </li>
+          <li class="px-2 py-1">
+            <a href="https://mystore.test?page=11">11</a>
+          </li>
+
+          <li class="disabled px-2 py-1" aria-disabled="true">
+            <span>...</span>
+          </li>
+
+          <li class="px-2 py-1">
+            <a href="https://mystore.test?page=14">14</a>
+          </li>
+          <li class="px-2 py-1">
+            <a href="https://mystore.test?page=15">15</a>
+          </li>
+
+          <li class="px-2 py-1">
+            <a
+              href="https://mystore.test?page=11"
+              rel="next"
+              aria-label="Next »"
+              >›</a
+            >
+          </li>
+        </ul>
+      </nav>
     </div>
     <!-- Content : end -->
 
