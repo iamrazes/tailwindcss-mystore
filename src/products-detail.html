@@ -23,7 +23,7 @@
     />
     <style>
       ul.splide__pagination.splide__pagination--ltr {
-        bottom: -1.5rem;
+        bottom: 0.5rem;
       }
 
       button.splide__pagination__page.is-active {
@@ -72,212 +72,255 @@
     <!-- Navbar : end -->
 
     <!-- Content : start -->
-    <div class="mt-[58px] mb-[59px] px-[20px] py-[15px] bg-base min-h-[calc(100vh-118px)]" id="content">
-      <section class="splide mb-8 mt-[5px]" id="splide">
-        <div class="splide__track rounded-lg">
-          <ul class="splide__list">
-            <li class="splide__slide md:h-[20rem]">
-              <img
-                src="../assets/images/spicyuuu.png"
-                alt="spicyuuu"
-                class="w-full h-full object-cover rounded-lg"
-              />
-            </li>
-            <li class="splide__slide md:h-[20rem]">
-              <img
-                src="../assets/images/spicyuuu.png"
-                alt="spicyuuu"
-                class="w-full h-full object-cover rounded-lg"
-              />
-            </li>
-            <li class="splide__slide md:h-[20rem]">
-              <img
-                src="../assets/images/spicyuuu.png"
-                alt="spicyuuu"
-                class="w-full h-full object-cover rounded-lg"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div class="flex flex-col gap-4">
-        <div class="bg-base-light p-4">
-          <h1 class="font-bold text-lg">
-            Template Backend Laravel Menggunakan AdminLTE
-          </h1>
-          <span class="font-light block">Category</span>
-          <span class="font-bold text-lg block mt-2">Rp 2,500,00</span>
-          <div class="flex justify-between items-center">
-            <div class="flex items-center gap-2">
-              <span
-                class="material-icons text-[17px] pb-[1px] text-accent-yellow"
-                >star_rate</span
+    <div class="p-5 bg-base mt-[60px] mb-[61px] min-h-[calc(100vh-121px)]">
+      <div id="content">
+        <div class="grid grid-cols-12 mb-4 gap-0 md:gap-4">
+          <div class="col-span-12 md:col-span-3">
+            <section class="splide mb-4 md:mb-0" id="splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide aspect-square">
+                    <img
+                      src="../assets/images/spicyuuu.png"
+                      alt="spicyuuu"
+                      class="w-full h-full object-cover"
+                    />
+                  </li>
+                  <li class="splide__slide aspect-square">
+                    <img
+                      src="../assets/images/spicyuuu.png"
+                      alt="spicyuuu"
+                      class="w-full h-full object-cover"
+                    />
+                  </li>
+                  <li class="splide__slide aspect-square">
+                    <img
+                      src="../assets/images/spicyuuu.png"
+                      alt="spicyuuu"
+                      class="w-full h-full object-cover"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div class="bg-base-light p-4 col-span-12 md:col-span-9">
+            <h1 class="font-bold text-lg">
+              Template Backend Laravel Menggunakan AdminLTE
+            </h1>
+            <span class="font-light block">Category</span>
+            <span class="font-bold text-lg block mt-2">Rp 2,500,00</span>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <span
+                  class="material-icons text-[17px] pb-[1px] text-accent-yellow"
+                  >star_rate</span
+                >
+                <span class="text-sm">5.0</span>
+                <span class="text-sm">|</span>
+                <span class="text-sm">1 Sold</span>
+              </div>
+              <button
+                class="bg-accent-yellow hover:bg-accent-yellow/70 text-base-light btn uppercase"
               >
-              <span class="text-sm">5.0</span>
-              <span class="text-sm">|</span>
-              <span class="text-sm">1 Sold</span>
-            </div>
-            <button
-              class="bg-accent-yellow text-base-light py-2 px-10 font-bold"
-            >
-              BUY
-            </button>
-          </div>
-        </div>
-        <div class="bg-base-light p-4">
-          <h1 class="font-bold text-lg mb-2">Description</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            ducimus velit quos quisquam atque eligendi ratione odio nulla autem
-            sapiente suscipit distinctio commodi libero, nam porro ipsa possimus
-            blanditiis repudiandae.
-          </p>
-        </div>
-        <div class="bg-base-light p-4 flex flex-col gap-3">
-          <div class="flex gap-3 items-center">
-            <div class="bg-white/50 w-14 h-14 rounded-full"></div>
-            <div class="flex flex-col">
-              <span class="font-bold">Syahrul Safarila</span>
-              <span class="font-light">Lived in Cianjur, Indonesia</span>
+                Buy this item
+              </button>
             </div>
           </div>
-          <div class="flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <span
-                class="material-icons text-[17px] pb-[1px] text-accent-yellow"
-                >star_rate</span
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <!-- <div class="bg-base-light p-4">
+            <h1 class="font-bold text-lg">
+              Template Backend Laravel Menggunakan AdminLTE
+            </h1>
+            <span class="font-light block">Category</span>
+            <span class="font-bold text-lg block mt-2">Rp 2,500,00</span>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <span
+                  class="material-icons text-[17px] pb-[1px] text-accent-yellow"
+                  >star_rate</span
+                >
+                <span class="text-sm">5.0</span>
+                <span class="text-sm">|</span>
+                <span class="text-sm">1 Sold</span>
+              </div>
+              <button
+                class="bg-accent-yellow text-base-light py-2 px-10 font-bold"
               >
-              <span class="text-sm">5.0</span>
-              <span class="text-sm">|</span>
-              <span class="text-sm">1 Feedback</span>
+                BUY
+              </button>
             </div>
-            <a href="#" class="text-sm bg-base px-4 py-1 font-semibold"
-              >Contact</a
-            >
+          </div> -->
+          <div class="bg-base-light p-4">
+            <h1 class="font-bold text-lg mb-2">Description</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              ducimus velit quos quisquam atque eligendi ratione odio nulla
+              autem sapiente suscipit distinctio commodi libero, nam porro ipsa
+              possimus blanditiis repudiandae.
+            </p>
           </div>
+          <div class="bg-base-light p-4 flex flex-col gap-3">
+            <div class="flex gap-3 items-center">
+              <div class="bg-white/50 w-14 h-14 rounded-full"></div>
+              <div class="flex flex-col">
+                <span class="font-bold">Syahrul Safarila</span>
+                <span class="font-light text-sm"
+                  >Lived in Cianjur, Indonesia</span
+                >
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span
+                  class="material-icons text-[17px] pb-[1px] text-accent-yellow"
+                  >star_rate</span
+                >
+                <span class="text-sm">5.0</span>
+                <span class="text-sm">|</span>
+                <span class="text-sm">1 Feedback</span>
+              </div>
+              <a href="#" class="btn bg-base hover:bg-base/70 text-sm uppercase"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <section class="splide mb-8 mt-[5px]" id="anotherProduct">
+            <h2 class="text-lg font-bold mb-3">Another Product</h2>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div
+                    class="flex flex-col bg-base-light w-full h-auto px-2 py-2"
+                  >
+                    <img
+                      src="../assets/images/c.jpg"
+                      class="object-cover aspect-square"
+                      alt=""
+                    />
+
+                    <a href="#" class="flex flex-wrap mt-1 gap-x-1">
+                      <div class="flex items-center gap-x-1">
+                        <span class="material-icons text-sm">circle</span>
+                        <p class="text-[8px]">Uploader</p>
+                      </div>
+                    </a>
+
+                    <a
+                      class="text-[0.86rem] leading-[1.5] line-clamp-2"
+                      href="#"
+                    >
+                      Nama Produk Nama Produk
+                    </a>
+
+                    <div
+                      class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
+                    >
+                      <span
+                        class="material-icons text-accent-yellow text-[14px]"
+                        >star</span
+                      >
+                      <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-1">
+                      <button class="material-icons text-[14px]">
+                        favorite_border
+                      </button>
+                      <p class="font-semibold text-[12px]">Rp 420,000</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div
+                    class="flex flex-col bg-base-light w-full h-auto px-2 py-2"
+                  >
+                    <img
+                      src="../assets/images/c.jpg"
+                      class="object-cover aspect-square"
+                      alt=""
+                    />
+
+                    <a href="#" class="flex flex-wrap mt-1 gap-x-1">
+                      <div class="flex items-center gap-x-1">
+                        <span class="material-icons text-sm">circle</span>
+                        <p class="text-[8px]">Uploader</p>
+                      </div>
+                    </a>
+
+                    <a
+                      class="text-[0.86rem] leading-[1.5] line-clamp-2"
+                      href="#"
+                    >
+                      Nama Produk Nama Produk
+                    </a>
+
+                    <div
+                      class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
+                    >
+                      <span
+                        class="material-icons text-accent-yellow text-[14px]"
+                        >star</span
+                      >
+                      <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-1">
+                      <button class="material-icons text-[14px]">
+                        favorite_border
+                      </button>
+                      <p class="font-semibold text-[12px]">Rp 420,000</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div
+                    class="flex flex-col bg-base-light w-full h-auto px-2 py-2"
+                  >
+                    <img
+                      src="../assets/images/c.jpg"
+                      class="object-cover aspect-square"
+                      alt=""
+                    />
+
+                    <a href="#" class="flex flex-wrap mt-1 gap-x-1">
+                      <div class="flex items-center gap-x-1">
+                        <span class="material-icons text-sm">circle</span>
+                        <p class="text-[8px]">Uploader</p>
+                      </div>
+                    </a>
+
+                    <a
+                      class="text-[0.86rem] leading-[1.5] line-clamp-2"
+                      href="#"
+                    >
+                      Nama Produk Nama Produk
+                    </a>
+
+                    <div
+                      class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
+                    >
+                      <span
+                        class="material-icons text-accent-yellow text-[14px]"
+                        >star</span
+                      >
+                      <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-1">
+                      <button class="material-icons text-[14px]">
+                        favorite_border
+                      </button>
+                      <p class="font-semibold text-[12px]">Rp 420,000</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
-        <section class="splide mb-8 mt-[5px]" id="anotherProduct">
-          <h2 class="text-lg font-bold mb-3">Another Product</h2>
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div
-                  class="flex flex-col bg-base-light w-full h-auto px-2 py-2"
-                >
-                  <img
-                    src="../assets/images/c.jpg"
-                    class="object-cover aspect-square"
-                    alt=""
-                  />
-
-                  <a href="#" class="flex flex-wrap mt-1 gap-x-1">
-                    <div class="flex items-center gap-x-1">
-                      <span class="material-icons text-sm">circle</span>
-                      <p class="text-[8px]">Uploader</p>
-                    </div>
-                  </a>
-
-                  <a class="text-[0.86rem] leading-[1.5] line-clamp-2" href="#">
-                    Nama Produk Nama Produk
-                  </a>
-
-                  <div
-                    class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
-                  >
-                    <span class="material-icons text-accent-yellow text-[14px]"
-                      >star</span
-                    >
-                    <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
-                  </div>
-
-                  <div class="flex justify-between items-center mt-1">
-                    <button class="material-icons text-[14px]">
-                      favorite_border
-                    </button>
-                    <p class="font-semibold text-[12px]">Rp 420,000</p>
-                  </div>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div
-                  class="flex flex-col bg-base-light w-full h-auto px-2 py-2"
-                >
-                  <img
-                    src="../assets/images/c.jpg"
-                    class="object-cover aspect-square"
-                    alt=""
-                  />
-
-                  <a href="#" class="flex flex-wrap mt-1 gap-x-1">
-                    <div class="flex items-center gap-x-1">
-                      <span class="material-icons text-sm">circle</span>
-                      <p class="text-[8px]">Uploader</p>
-                    </div>
-                  </a>
-
-                  <a class="text-[0.86rem] leading-[1.5] line-clamp-2" href="#">
-                    Nama Produk Nama Produk
-                  </a>
-
-                  <div
-                    class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
-                  >
-                    <span class="material-icons text-accent-yellow text-[14px]"
-                      >star</span
-                    >
-                    <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
-                  </div>
-
-                  <div class="flex justify-between items-center mt-1">
-                    <button class="material-icons text-[14px]">
-                      favorite_border
-                    </button>
-                    <p class="font-semibold text-[12px]">Rp 420,000</p>
-                  </div>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div
-                  class="flex flex-col bg-base-light w-full h-auto px-2 py-2"
-                >
-                  <img
-                    src="../assets/images/c.jpg"
-                    class="object-cover aspect-square"
-                    alt=""
-                  />
-
-                  <a href="#" class="flex flex-wrap mt-1 gap-x-1">
-                    <div class="flex items-center gap-x-1">
-                      <span class="material-icons text-sm">circle</span>
-                      <p class="text-[8px]">Uploader</p>
-                    </div>
-                  </a>
-
-                  <a class="text-[0.86rem] leading-[1.5] line-clamp-2" href="#">
-                    Nama Produk Nama Produk
-                  </a>
-
-                  <div
-                    class="border-accent-yellow border-b flex items-center py-1 gap-x-[2px]"
-                  >
-                    <span class="material-icons text-accent-yellow text-[14px]"
-                      >star</span
-                    >
-                    <p class="text-[12px] text-white/80">5.0 | Terjual 1</p>
-                  </div>
-
-                  <div class="flex justify-between items-center mt-1">
-                    <button class="material-icons text-[14px]">
-                      favorite_border
-                    </button>
-                    <p class="font-semibold text-[12px]">Rp 420,000</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
       </div>
     </div>
     <!-- Content : end -->
