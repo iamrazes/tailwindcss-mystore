@@ -35,6 +35,20 @@
       }
     </style>
     <!-- splidejs : end -->
+    <!-- light gallery : start -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lg-zoom.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lg-thumbnail.min.css"
+    />
+    <!-- light gallery : end -->
     <link href="../dist/output.css" rel="stylesheet" />
     <title>myStore</title>
   </head>
@@ -42,7 +56,7 @@
   <body class="bg-base-dark text-white max-w-screen-md mx-auto">
     <!-- Navbar : start -->
     <nav
-      class="flex justify-between bg-base-light px-[20px] py-[15px] fixed w-full max-w-screen-md top-0 z-[10000] border-b-2 border-base"
+      class="flex justify-between bg-base-light px-[20px] py-[15px] fixed w-full max-w-screen-md top-0 z-[1000] border-b-2 border-base"
     >
       <div id="brandSection">
         <a href="./index.html" class="font-semibold text-xl">Logo</a>
@@ -76,30 +90,39 @@
       <div id="content">
         <div class="grid grid-cols-12 mb-4 gap-0 md:gap-4">
           <div class="col-span-12 md:col-span-3">
-            <section class="splide mb-4 md:mb-0" id="splide">
+            <section class="splide mb-4 md:mb-0 bg-base-light" id="splide">
               <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide aspect-square">
+                <ul class="splide__list" id="lightgallery">
+                  <a
+                    href="../assets/images/c.jpg"
+                    class="splide__slide aspect-square"
+                  >
+                    <img
+                      src="../assets/images/c.jpg"
+                      alt="spicyuuu 1"
+                      class="w-full h-full object-contain"
+                    />
+                  </a>
+                  <a
+                    href="../assets/images/spicyuuu.png"
+                    class="splide__slide aspect-square"
+                  >
                     <img
                       src="../assets/images/spicyuuu.png"
-                      alt="spicyuuu"
-                      class="w-full h-full object-cover"
+                      alt="spicyuuu 2"
+                      class="w-full h-full object-contain"
                     />
-                  </li>
-                  <li class="splide__slide aspect-square">
+                  </a>
+                  <a
+                    href="../assets/images/spicyuuu.png"
+                    class="splide__slide aspect-square"
+                  >
                     <img
                       src="../assets/images/spicyuuu.png"
-                      alt="spicyuuu"
-                      class="w-full h-full object-cover"
+                      alt="spicyuuu 3"
+                      class="w-full h-full object-contain"
                     />
-                  </li>
-                  <li class="splide__slide aspect-square">
-                    <img
-                      src="../assets/images/spicyuuu.png"
-                      alt="spicyuuu"
-                      class="w-full h-full object-cover"
-                    />
-                  </li>
+                  </a>
                 </ul>
               </div>
             </section>
@@ -327,7 +350,7 @@
 
     <!-- Bottom Navbar : start -->
     <nav
-      class="flex justify-evenly gap-x-[28px] bg-base-light py-[8px] px-[20px] fixed w-full max-w-screen-md bottom-0 z-[10000] border-t-2 border-base"
+      class="flex justify-evenly gap-x-[28px] bg-base-light py-[8px] px-[20px] fixed w-full max-w-screen-md bottom-0 z-[1000] border-t-2 border-base"
     >
       <a href="#" class="flex flex-col items-center gap-y-[4px] w-[45px]">
         <span class="material-icons">home_filled</span>
@@ -388,6 +411,20 @@
       });
     </script>
     <!-- splide js : end -->
+
+    <!-- light gallery : start -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script type="text/javascript">
+      lightGallery(document.getElementById("lightgallery"), {
+        plugins: [lgZoom, lgThumbnail],
+        licenseKey: "your_license_key",
+        speed: 500,
+        // ... other settings
+      });
+    </script>
+    <!-- light gallery : end -->
 
     <!-- navbar : start -->
     <script src="./navbar.js"></script>

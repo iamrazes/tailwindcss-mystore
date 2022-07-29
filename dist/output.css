@@ -594,6 +594,10 @@ video {
   z-index: 10000;
 }
 
+.z-\[1000\] {
+  z-index: 1000;
+}
+
 .col-span-12 {
   grid-column: span 12 / span 12;
 }
@@ -951,10 +955,6 @@ video {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-accent-yellow\/5 {
-  background-color: rgb(255 184 0 / 0.05);
-}
-
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -1174,14 +1174,6 @@ video {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-}
-
-.hover\:bg-accent-yellow\/90:hover {
-  background-color: rgb(255 184 0 / 0.9);
-}
-
-.hover\:bg-accent-yellow\/80:hover {
-  background-color: rgb(255 184 0 / 0.8);
 }
 
 .hover\:bg-accent-yellow\/70:hover {
