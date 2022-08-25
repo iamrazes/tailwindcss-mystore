@@ -774,6 +774,10 @@ video {
   width: 100px;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .max-w-screen-md {
   max-width: 768px;
 }
@@ -811,6 +815,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
